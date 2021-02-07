@@ -1,4 +1,4 @@
-package День1
+package Task2
 
 import (
 	"fmt"
@@ -6,9 +6,8 @@ import (
 )
 
 //Найти самую длинную последовательность нулей
-//func (N int) int
 
-func main2() {
+func main() {
 	var n int
 	fmt.Fscan(os.Stdin, &n)
 	fmt.Printf("Число: %b, максимальная последовательность нулей %d",n, GetZeroSequenceLength(n))

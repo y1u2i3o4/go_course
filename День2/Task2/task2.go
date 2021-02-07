@@ -5,8 +5,9 @@ import (
 	"math/rand"
 )
 
+const length int = 10
+
 func main() {
-	length := 10
 	array := make([]int, length)
 	for i:=0; i < length; i++{
 		array[i] = rand.Intn(10)

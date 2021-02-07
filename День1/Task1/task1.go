@@ -1,19 +1,16 @@
-package День1
+package main
 
 //Генератор квадратов натуральных чисел
 
 import (
 	"fmt"
-	"os"
 )
 
-func main1() {
-	var n int
-	fmt.Fscan(os.Stdin, &n)
-	squares := GetSquares(n)
-	for _, i := range squares{
-		fmt.Println(i)
-	}
+const count int = 10
+
+func main() {
+	squares := GetSquares(count)
+	fmt.Printf("Квадраты первых %d чисел: %v\n", count, squares)
 }
 
 func GetSquares(n int) [] int{
